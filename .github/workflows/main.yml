@@ -29,7 +29,7 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.HUGO-BLOCK }}  # 使用你步骤6设置的Name(大写)   
+          personal_token: ${{ secrets.hugo-block }}  # 使用你步骤6设置的Name(大写)   
           publish_dir: ./public
           publish_branch: main   # 添加这一行, 可以将推送分支改为main
           user_name: 'github-actions[bot]'
