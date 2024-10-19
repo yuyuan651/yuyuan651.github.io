@@ -31,7 +31,7 @@ jobs:
         with:
           personal_token: ${{ secrets.HUGO_BLOG }}  # 使用你步骤6设置的Name(大写)
           publish_dir: ./public
-          publish_branch: source   # 添加这一行, 可以将推送分支改为main
+          publish_branch: main   # 添加这一行, 可以将推送分支改为main
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_message: ${{ github.event.head_commit.message }}
